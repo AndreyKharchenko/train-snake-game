@@ -1,0 +1,22 @@
+.decor {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.decor.tree {
+    background: url("../../assets/tree.svg") center / cover no-repeat;
+    background-size: 40px 40px;
+}
+
+.decor.tree2 {
+    background: url("../../assets/tree2.svg") center / cover no-repeat;
+}
+
+.decor.ball {
+    background: url("../../assets/ball.svg") center / cover no-repeat;
+    transform: rotate(20deg);
+}

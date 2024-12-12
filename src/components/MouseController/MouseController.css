@@ -1,0 +1,58 @@
+.controller {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10%;
+}
+
+.controller div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.controller div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #8cb4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    color: #FFF;
+}
+
+.btn.up svg {
+    transform: rotate(180deg);
+}
+
+.btn.left svg {
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
+
+.btn.right svg {
+    transform: rotate(270deg);
+    margin-left: 5px;
+}
+
+.disabled {
+    background-color: #e80f0f;
+    pointer-events: none;
+}

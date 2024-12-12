@@ -1,0 +1,23 @@
+.gameOverBoard {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(128, 128, 128, 0.6);
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #FFF;
+}
+
+.gameOverBoard h2,
+.gameOverBoard .total {
+    color: red;
+}
+
+.gameOverBoard button {
+    width: 180px;
+}

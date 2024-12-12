@@ -1,0 +1,41 @@
+.startBoard {
+    position: relative;
+    min-width: 320px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFF;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.startBoard p {
+    color: #FFF;
+    text-shadow: 2px 2px 2px #8cb4f5;
+}
+
+.startBoard button {
+    width: 180px;
+}
+
+.startBoard .total {
+    color: red;
+    text-shadow: none;
+    font-weight: 600;
+} 
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.5;
+}

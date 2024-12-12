@@ -1,0 +1,56 @@
+.train {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    transition: background 0.3s ease-in-out;
+}
+
+.train.red {
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+
+.train::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    background: #8cb4f5;
+    transition: background 0.3s ease-in-out;
+}
+
+.train.red::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    top: 50%;
+    left: 50%;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    background: #f64848;
+    transition: background 0.3s ease-in-out;
+}
+
+.train::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFF;
+}
+
+.train-head {
+    width: 32px;
+    height: 32px;
+    background: url("../../assets/train.svg") center / contain no-repeat;
+}

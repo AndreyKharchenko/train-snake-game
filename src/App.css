@@ -1,0 +1,60 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoard {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  min-width: 320px;
+  min-height: 320px;
+  border-radius: 12px;
+  border: 2px solid #8cb4f5;
+  padding: 4px;
+  overflow: hidden;
+  background: url("./assets/zima-bg.png") center / cover no-repeat;
+}
+
+.item {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  /* border: 1px solid rgb(175, 175, 175); */
+  box-sizing: border-box;
+}
+
+h1 {
+  text-shadow: 2px 2px 2px #1168da;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.gameStatic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.gameStatic p {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #1168da;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 15px;
+  color: white;
+  border-radius: 8px;
+  background: #8cb4f5;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .gameStatic {
+    justify-content: space-around;
+  }
+}
