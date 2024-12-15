@@ -9,9 +9,9 @@ import { DirectionType, IItemCoord } from './models/models';
 function App() {
   const BOARD_LENGTH = 10;
   // Координаты декорций
-  const TREES = [{x: 7, y: 6 }, /* {x: 2, y: 3 } */];
-  const TREES2 = [{x: 8, y: 1 }, /* {x: 1, y: 8 } */];
-  const BALLS = [{x: 3, y: 6 }, /* {x: 6, y: 3 } */];
+  const TREES = [{x: 7, y: 6 }, {x: 2, y: 3 }];
+  const TREES2 = [{x: 8, y: 1 }, {x: 1, y: 8 }];
+  const BALLS = [{x: 3, y: 6 }, {x: 6, y: 3 }];
   const [direction, setDirection] = useState<DirectionType>('right');
   const [train, setTrain] = useState<IItemCoord[]>([
     { x: 1, y: 0 },
